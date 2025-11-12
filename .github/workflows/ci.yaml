@@ -34,8 +34,8 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/myapp:latest
 
       # (Optional) Step 5: Also tag with the commit SHA for traceability
-      - name: Tag image with commit SHA
-        uses: docker/build-push-action@v6
-        with:
-          push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/myapp:${{ github.sha }}
+      # - name: Tag image with commit SHA
+      #  uses: docker/build-push-action@v6
+      #  with:
+      #    push: true
+      #    tags: ${{ secrets.DOCKERHUB_USERNAME }}/myapp:${{ github.sha }}
